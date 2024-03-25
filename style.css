@@ -1,0 +1,57 @@
+/* General body styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Styling for the container */
+.container {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 90%;
+    max-width: 400px;
+}
+
+
+.weather-input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.check-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.check-button:hover {
+    background-color: #0056b3;
+}
+
+
+.weather-location, .temperature {
+    color: #333;
+    margin: 5px 0;
+}
+
+.temperature {
+    font-size: 24px;
+}

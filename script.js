@@ -4,8 +4,10 @@ document.querySelector("button").addEventListener("click", function() {
     const apiKey = "7c98d0de87194fd9995111536242503";
     const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${inputValue}`; // Use the input value in the API request
 
-    let weatherLoc = document.querySelector("h1");
-    let temp = document.querySelector("h2");
+    let weatherLoc = document.getElementById("city");
+    let region = document.getElementById("region");
+    console.log(weatherLoc);
+    let temp = document.getElementById("temperature");
 
     fetch(url, {
         headers: {
@@ -16,8 +18,9 @@ document.querySelector("button").addEventListener("click", function() {
         return response.json();
     })
     .then(data => {
-        
-        weatherLoc.innerText = data.location.name;
+        console.log(data);
+        weatherLoc.innerText = 'City: '+data.location.name;
+        region.innerText = 'Region: '+data.location.region;
         temp.innerText = `${data.current.temp_c} °C`;
     })
     .catch(error => {

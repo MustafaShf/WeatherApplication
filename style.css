@@ -1,17 +1,31 @@
-/* General body styling */
+
 body, html {
+    height: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     text-align: center;
 }
 
-/* Styling for the container */
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+header {
+    margin-bottom: 20px;
+}
+
+.app-name {
+    font-size: 32px;
+    color: #007bff;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
 .container {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -19,27 +33,28 @@ body, html {
     background-color: #fff;
     width: 90%;
     max-width: 400px;
+    margin: auto;
 }
 
 
-.weather-input {
+.weather-input, .check-button {
     width: 80%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 16px;
 }
 
+.weather-input {
+    border: 1px solid #ccc;
+}
 
 .check-button {
     width: 100%;
-    padding: 10px;
     border: none;
     background-color: #007bff;
     color: white;
-    border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
 }
 
 .check-button:hover {
@@ -55,3 +70,18 @@ body, html {
 .temperature {
     font-size: 24px;
 }
+
+
+footer {
+    width: 100%;
+    padding: 10px 0;
+    position: relative; 
+    bottom: 0;
+}
+
+.footer-text {
+    color: #666;
+    font-size: 16px;
+    
+}
+

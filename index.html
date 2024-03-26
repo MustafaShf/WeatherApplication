@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="style.css"> <!-- Ensure the CSS file is linked -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1 class="app-name">Weather App</h1>
+    </header>
     <div class="container">
         <input type="text" class="weather-input" placeholder="Enter City...">
         <button class="check-button">Check</button>
-        <h1 class="weather-location"></h1>
-        <h2 class="temperature"></h2>
+        <h1 class="weather-location" id="city"></h1>
+        <h2 class="region weather-location" id="region"></h2>
+        <h2 class="temperature" id="temperature"></h2>
     </div>
+    <footer>
+        <p class="footer-text">Developed by GM</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
